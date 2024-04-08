@@ -2,7 +2,25 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-    "title": "Unite Summit",
+    "title": "Unite Node JS",
     "details": "Um evento para quem é apaixonado por programação",
-    "maximumAttendees": 100
+    "maximumAttendees": 150
 }
+
+###
+
+POST http://localhost:3333/events/b223d32f-075e-4d28-b309-a835743424cf/attendees
+Content-Type: application/json
+
+{
+    "name": "João Pedro Florenço",
+    "email": "joao@teste.com"
+}
+
+###
+
+GET http://localhost:3333/events/b223d32f-075e-4d28-b309-a835743424cf
+
+###
+
+GET http://localhost:3333/attendees/4/badge
